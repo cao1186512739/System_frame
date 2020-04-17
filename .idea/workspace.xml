@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a85d92b-d574-4314-ac09-7e82c1723cdf" name="Default Changelist" comment="" />
+    <list default="true" id="4a85d92b-d574-4314-ac09-7e82c1723cdf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/entity/dto/LoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian/MenuRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/System-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-web/src/main/java/com/opendev/web/contrller/LoginConterller.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-web/src/main/java/com/opendev/web/contrller/LoginConterller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +30,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -28,11 +48,13 @@
     </option>
   </component>
   <component name="ProjectId" id="1aZDkm8OZQuWXW8IG1KV8wYPr11" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -40,8 +62,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/System-web" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.10693877" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -51,6 +73,8 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\MyWork\System_frame\System-domain\src\main\java\com\opendev\domian" />
+      <recent name="F:\MyWork\System_frame\System-service\src\main\java\com\opendev\service" />
       <recent name="F:\MyWork\System_frame\System-web" />
       <recent name="F:\MyWork\System_frame\System-web\src\main\resources" />
     </key>
@@ -79,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586934367258</updated>
-      <workItem from="1586934369670" duration="18820000" />
+      <workItem from="1586934369670" duration="20258000" />
     </task>
     <servers />
   </component>
@@ -91,10 +115,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Inspections/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587091199878" />
-    <state x="552" y="178" key="#Project_Structure" timestamp="1587092776334">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1587106651759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587092776334" />
+    <state x="552" y="178" key="#Project_Structure/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587106651759" />
     <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1587101612694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -159,9 +183,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587101313211" />
-    <state x="334" y="214" key="new project wizard" timestamp="1587089112768">
+    <state x="334" y="214" key="new project wizard" timestamp="1587106834362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="214" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587089112768" />
+    <state x="334" y="214" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587106834362" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587106573068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587106573068" />
   </component>
 </project>

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="System-service" />
+        <module name="System-domain" />
         <module name="System-web" />
         <module name="System-dao" />
         <module name="System-common" />
