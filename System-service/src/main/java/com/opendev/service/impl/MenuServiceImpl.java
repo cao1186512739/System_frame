@@ -1,19 +1,12 @@
 package com.opendev.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.xblog.core.base.BaseService;
-import com.xblog.core.model.dto.JsonResultDto;
-import com.xblog.core.model.po.Menu;
-import com.xblog.mapper.MenuMapper;
-import com.xblog.service.MenuService;
+import com.opendev.service.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
-public class MenuServiceImpl extends BaseService implements MenuService {
+public class MenuServiceImpl implements MenuService {
 
     @Autowired
     private MenuMapper menuMapper;
