@@ -2,21 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a85d92b-d574-4314-ac09-7e82c1723cdf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/entity/dto/LoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian/MenuRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/component/FileComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/component/RedisComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/constant/IErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/constant/PublicConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/constant/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/utils/BeanUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/utils/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/utils/JacksonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/utils/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/utils/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/utils/TokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-dao/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-dao/src/main/resources/mapper/MenuRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-dao/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-dao/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System-dao/src/main/resources/mapper/UserRoleMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/System-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/System-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/response/ResponseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-common/src/main/java/com/opendev/response/ResponseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-common/target/classes/META-INF/System-common.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-common/target/classes/com/opendev/advice/ResponseAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-common/target/classes/com/opendev/annotation/AccessLimit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-common/target/classes/com/opendev/annotation/impl/AccessLimitAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-common/target/classes/com/opendev/constants/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-common/target/classes/com/opendev/exception/AccessLessException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-common/target/classes/com/opendev/response/ResponseHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/System-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-dao/src/main/java/com/opendev/dao/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-dao/src/main/java/com/opendev/dao/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-dao/src/main/java/com/opendev/dao/mapper/MenuRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-dao/src/main/java/com/opendev/dao/mapper/MenuRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-dao/src/main/java/com/opendev/dao/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-dao/src/main/java/com/opendev/dao/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-dao/src/main/java/com/opendev/dao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-dao/src/main/java/com/opendev/dao/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-dao/src/main/java/com/opendev/dao/mapper/UserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-dao/src/main/java/com/opendev/dao/mapper/UserRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/System-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/dto/JsonResultDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/System-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-service/src/main/java/com/opendev/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-web/src/main/java/com/opendev/web/SpringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-web/src/main/java/com/opendev/web/SpringbootApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/System-web/src/main/java/com/opendev/web/contrller/LoginConterller.java" beforeDir="false" afterPath="$PROJECT_DIR$/System-web/src/main/java/com/opendev/web/contrller/LoginConterller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-web/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/System-web/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/System-web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-web/target/classes/META-INF/System-web.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-web/target/classes/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-web/target/classes/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-web/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-web/target/classes/com/opendev/web/SpringbootApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System-web/target/classes/com/opendev/web/contrller/LoginConterller.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +96,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/System-domain/src/main/java/com/opendev/domian" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/System-dao/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.10693877" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -70,13 +104,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.opendev.utils" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\MyWork\System_frame\System-domain\src\main\java\com\opendev\domian" />
-      <recent name="F:\MyWork\System_frame\System-service\src\main\java\com\opendev\service" />
-      <recent name="F:\MyWork\System_frame\System-web" />
-      <recent name="F:\MyWork\System_frame\System-web\src\main\resources" />
+      <recent name="F:\MyWork\System_frame\System-dao\src\main\resources" />
+      <recent name="F:\MyWork\System_frame\System-common\src\main\java\com\opendev" />
+      <recent name="F:\MyWork\System_frame\System-common\src\main\java\com\opendev\utils" />
+      <recent name="F:\MyWork\System_frame\System-service\src\main\resources" />
+      <recent name="F:\MyWork\System_frame\System-dao\src\main\java\com\opendev\dao" />
     </key>
   </component>
   <component name="RunManager">
@@ -103,7 +139,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586934367258</updated>
-      <workItem from="1586934369670" duration="20258000" />
+      <workItem from="1586934369670" duration="28273000" />
     </task>
     <servers />
   </component>
@@ -115,14 +151,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Inspections/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587091199878" />
-    <state x="552" y="178" key="#Project_Structure" timestamp="1587106651759">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1587109662879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587106651759" />
-    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1587101612694">
+    <state x="552" y="178" key="#Project_Structure/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587109662879" />
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1587109564129">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587101612694" />
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587109564129" />
     <state x="645" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587088923112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -131,38 +167,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587093510934" />
-    <state width="1877" height="204" key="GridCell.Tab.0.bottom" timestamp="1587105597917">
+    <state width="1877" height="405" key="GridCell.Tab.0.bottom" timestamp="1587115334405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="204" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587105597917" />
-    <state width="1877" height="204" key="GridCell.Tab.0.center" timestamp="1587105597917">
+    <state width="1877" height="405" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587115334405" />
+    <state width="1877" height="405" key="GridCell.Tab.0.center" timestamp="1587115334405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="204" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587105597917" />
-    <state width="1877" height="204" key="GridCell.Tab.0.left" timestamp="1587105597917">
+    <state width="1877" height="405" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587115334405" />
+    <state width="1877" height="405" key="GridCell.Tab.0.left" timestamp="1587115334405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="204" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587105597917" />
-    <state width="1877" height="204" key="GridCell.Tab.0.right" timestamp="1587105597917">
+    <state width="1877" height="405" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587115334405" />
+    <state width="1877" height="405" key="GridCell.Tab.0.right" timestamp="1587115334405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="204" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587105597917" />
-    <state width="1877" height="204" key="GridCell.Tab.1.bottom" timestamp="1587105597917">
+    <state width="1877" height="405" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587115334405" />
+    <state width="1877" height="405" key="GridCell.Tab.1.bottom" timestamp="1587115334405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="204" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587105597917" />
-    <state width="1877" height="204" key="GridCell.Tab.1.center" timestamp="1587105597917">
+    <state width="1877" height="405" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587115334405" />
+    <state width="1877" height="405" key="GridCell.Tab.1.center" timestamp="1587115334405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="204" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587105597917" />
-    <state width="1877" height="204" key="GridCell.Tab.1.left" timestamp="1587105597917">
+    <state width="1877" height="405" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587115334405" />
+    <state width="1877" height="405" key="GridCell.Tab.1.left" timestamp="1587115334405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="204" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587105597917" />
-    <state width="1877" height="204" key="GridCell.Tab.1.right" timestamp="1587105597917">
+    <state width="1877" height="405" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587115334405" />
+    <state width="1877" height="405" key="GridCell.Tab.1.right" timestamp="1587115334405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="204" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587105597917" />
+    <state width="1877" height="405" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587115334405" />
     <state width="1877" height="240" key="GridCell.Tab.2.bottom" timestamp="1587100114310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -179,14 +215,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="240" key="GridCell.Tab.2.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587100114310" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1587101313211">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1587113952005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587101313211" />
-    <state x="334" y="214" key="new project wizard" timestamp="1587106834362">
+    <state x="440" y="94" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587113952005" />
+    <state x="1920" y="0" width="1188" height="999" maximized="true" key="dock-window-1" timestamp="1587109946282">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="0" width="1188" height="999" maximized="true" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587109946282" />
+    <state x="334" y="214" key="new project wizard" timestamp="1587107637281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="214" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587106834362" />
+    <state x="334" y="214" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587107637281" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587106573068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

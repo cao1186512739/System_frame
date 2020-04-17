@@ -1,9 +1,10 @@
 package com.opendev.dao.mapper;
 
 
-import com.xblog.core.model.po.User;
+import com.opendev.domian.User;
 import org.apache.ibatis.annotations.Param;
 import tk.mybatis.mapper.common.BaseMapper;
+
 
 public interface UserMapper extends BaseMapper<User> {
 

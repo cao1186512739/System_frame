@@ -2,19 +2,19 @@ package com.opendev.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.xblog.core.base.BaseService;
-import com.xblog.core.component.FileComponent;
-import com.xblog.core.model.constant.PublicConstant;
-import com.xblog.core.model.constant.ResultCode;
-import com.xblog.core.model.dto.InputUserDto;
-import com.xblog.core.model.dto.JsonResultDto;
-import com.xblog.core.model.dto.OutputUserDto;
-import com.xblog.core.model.po.Menu;
-import com.xblog.core.model.po.User;
-import com.xblog.core.utils.*;
-import com.xblog.mapper.MenuMapper;
-import com.xblog.mapper.UserMapper;
-import com.xblog.service.UserService;
+import com.opendev.component.FileComponent;
+import com.opendev.component.RedisComponent;
+import com.opendev.constant.PublicConstant;
+import com.opendev.constant.ResultCode;
+import com.opendev.dao.mapper.MenuMapper;
+import com.opendev.dao.mapper.UserMapper;
+import com.opendev.domian.Menu;
+import com.opendev.domian.User;
+import com.opendev.dto.InputUserDto;
+import com.opendev.dto.OutputUserDto;
+import com.opendev.response.ResponseHelper;
+import com.opendev.service.UserService;
+import com.opendev.utils.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +29,10 @@ import java.util.List;
  * @Version V1.0
  **/
 @Service
-public class UserServiceImpl extends BaseService implements UserService {
+public class UserServiceImpl implements UserService {
+
+    @Autowired
+    private RedisComponent redisComponent;
 
     @Autowired
     private UserMapper userMapper;
@@ -41,25 +44,25 @@ public class UserServiceImpl extends BaseService implements UserService {
     private FileComponent fileComponent;
 
     @Override
-    public JsonResultDto<PageInfo<User>> get(Integer page, Integer limit) {
+    public ResponseHelper<PageInfo<User>> get(Integer page, Integer limit) {
         PageHelper.startPage(page, limit);
         List<User> users = userMapper.selectAll();
         PageInfo<User> pageInfo = new PageInfo<>(users);
-        return success(pageInfo);
+        return ResponseHelper.Succeed(pageInfo);
     }
 
     @Override
-    public JsonResultDto add(InputUserDto inputUserDto) {
+    public ResponseHelper add(InputUserDto inputUserDto) {
         User user = BeanUtil.dtoToPo(inputUserDto, User.class);
         user.setAvatar(fileComponent.makeAvatar());
         user.setPassword(MD5Util.md5(user.getPassword()));
-        return userMapper.insertSelective(user) > 0 ? success() : failed();
+        return userMapper.insertSelective(user) > 0 ? ResponseHelper.Succeed() : ResponseHelper.Faild();
     }
 
     @Override
-    public JsonResultDto edit(InputUserDto inputUserDto) {
+    public ResponseHelper edit(InputUserDto inputUserDto) {
         User user = BeanUtil.dtoToPo(inputUserDto, User.class);
-        return userMapper.updateByPrimaryKeySelective(user) > 0 ? success() : failed();
+        return userMapper.updateByPrimaryKeySelective(user) > 0 ? ResponseHelper.Succeed() : ResponseHelper.Faild();
     }
 
     @Override
@@ -70,15 +73,16 @@ public class UserServiceImpl extends BaseService implements UserService {
 
     /**
      * 获取当前登录用户拥有访问权限的菜单
+     *
      * @param username
      * @return
      */
     @Override
     public List<Menu> getMenus(String username) {
         //生成为空key
-        String key = username+PublicConstant.MENU_KEY;
+        String key = username + PublicConstant.MENU_KEY;
         List<Menu> menus = (List<Menu>) redisComponent.getForListAll(key);
-        if (null == menus || menus.isEmpty()){
+        if (null == menus || menus.isEmpty()) {
             menus = menuMapper.selectMenus(username);
             if (redisComponent.hasKey(key)) {
                 redisComponent.del(key);
@@ -90,24 +94,25 @@ public class UserServiceImpl extends BaseService implements UserService {
 
     /**
      * 用户登录业务实现
+     *
      * @param response
      * @param username
      * @param password
      * @return
      */
     @Override
-    public JsonResultDto login(HttpServletResponse response, String username, String password) {
+    public ResponseHelper login(HttpServletResponse response, String username, String password) {
         User user = userMapper.selectByUsername(username);
         if (StringUtil.isNull(user)) {
-            return failed(ResultCode.USER_NO_FOUND);
+            return ResponseHelper.Faild(ResultCode.USER_NO_FOUND);
         }
         // 密码校验
         if (!MD5Util.verify(password, user.getPassword())) {
-            return failed(ResultCode.USERNAME_PASSWORD_ERROR);
+            return ResponseHelper.Faild(ResultCode.USERNAME_PASSWORD_ERROR);
         }
         // 生成token令牌
         String token = TokenUtil.makeToken(username);
         CookieUtil.set(response, PublicConstant.LOGIN_IDENTITY_KEY, token, false);
-        return success();
+        return ResponseHelper.Succeed();
     }
 }

@@ -1,22 +1,26 @@
 package com.opendev.service;
 
 import com.github.pagehelper.PageInfo;
+import com.opendev.domian.Menu;
 import com.opendev.domian.User;
+import com.opendev.dto.InputUserDto;
+import com.opendev.dto.OutputUserDto;
+import com.opendev.response.ResponseHelper;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 public interface UserService {
 
-    JsonResultDto<PageInfo<User>> get(Integer page, Integer limit);
+    ResponseHelper<PageInfo<User>> get(Integer page, Integer limit);
 
-    JsonResultDto add(InputUserDto inputUserDto);
+    ResponseHelper add(InputUserDto inputUserDto);
 
-    JsonResultDto edit(InputUserDto inputUserDto);
+    ResponseHelper edit(InputUserDto inputUserDto);
 
     OutputUserDto getByUsername(String username);
 
     List<Menu> getMenus(String username);
 
-    JsonResultDto login(HttpServletResponse response, String username, String password);
+    ResponseHelper login(HttpServletResponse response, String username, String password);
 }

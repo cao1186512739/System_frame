@@ -1,5 +1,6 @@
 package com.opendev.response;
 
+import com.opendev.constant.ResultCode;
 import lombok.Data;
 
 @Data
@@ -32,6 +33,14 @@ public class ResponseHelper<T> {
 
     public static ResponseHelper Faild() {
         return new ResponseHelper(500, "服务器内部错误");
+    }
+
+    public static ResponseHelper Succeed(Object object) {
+        return new ResponseHelper(200, "成功",object);
+    }
+
+    public static ResponseHelper Faild(ResultCode resultCode) {
+        return new ResponseHelper(resultCode.getCode(), resultCode.getMsg(), null);
     }
 
 }

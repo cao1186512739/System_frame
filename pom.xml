@@ -17,6 +17,8 @@
     <packaging>pom</packaging>
 
     <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <spring-boot-version>2.0.6.RELEASE</spring-boot-version>
         <springfox-swagger2.version>2.2.2</springfox-swagger2.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
@@ -27,7 +29,9 @@
         <tk-mybatis-version>2.1.5</tk-mybatis-version>
         <druid-version>1.1.21</druid-version>
         <mybatis-version>2.1.2</mybatis-version>
-        <!-- <redis-version>2.0.6.RELEASE</redis-version>-->
+        <redis-version>2.0.6.RELEASE</redis-version>
+        <avatar-generator-version>1.0.0</avatar-generator-version>
+        <commons-lang3-version>3.9</commons-lang3-version>
     </properties>
 
     <dependencyManagement>
@@ -60,7 +64,7 @@
             <dependency>
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-redis</artifactId>
-                <!-- <version>${redis-version}</version>-->
+                <version>${redis-version}</version>
             </dependency>
             <!--Lombok-->
             <dependency>
@@ -103,7 +107,17 @@
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid-version}</version>
             </dependency>
-
+            <!-- Github头像生成器 -->
+            <dependency>
+                <groupId>com.github.afkbrb</groupId>
+                <artifactId>github-avatar-generator</artifactId>
+                <version>${avatar-generator-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3-version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>

@@ -1,6 +1,7 @@
 package com.opendev.dao.mapper;
 
-import com.xblog.core.model.po.Menu;
+
+import com.opendev.domian.Menu;
 import org.apache.ibatis.annotations.Param;
 import tk.mybatis.mapper.common.BaseMapper;
 

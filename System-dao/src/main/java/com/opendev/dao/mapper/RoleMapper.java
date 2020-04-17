@@ -1,6 +1,6 @@
 package com.opendev.dao.mapper;
 
-import com.xblog.core.model.po.Role;
+import com.opendev.domian.Role;
 import tk.mybatis.mapper.common.BaseMapper;
 
 public interface RoleMapper extends BaseMapper<Role> {
